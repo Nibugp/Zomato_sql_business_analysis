@@ -25,8 +25,8 @@ ON s.product_id = p.product_id;
 -- 4️⃣ Average Order Value (AOV)
 SELECT 
 AVG(p.price) AS average_order_value
-FROM sales s
-JOIN product p 
+FROM product p 
+JOIN sales s
 ON s.product_id = p.product_id;
 
 
