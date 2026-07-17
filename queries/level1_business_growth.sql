@@ -17,8 +17,8 @@ FROM sales;
 -- 3️⃣ Total revenue generated
 SELECT 
 SUM(p.price) AS total_revenue
-FROM sales s
-JOIN product p 
+FROM product p 
+JOIN sales s
 ON s.product_id = p.product_id;
 
 
